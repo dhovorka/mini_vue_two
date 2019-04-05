@@ -1,5 +1,11 @@
 <template>
   <div class="home">
+    <a href="/signup">Signup</a> or
+    <router-link to="/signup">Signup</router-link>
+    <a href="/login">Login</a> or
+    <router-link to="/login">Login</router-link>
+    <a href="/logout">Logout</a> or
+    <router-link to="/logout">Logout</router-link>
     <h1>New Product</h1>
     <div>
       Name: <input type="text" v-model="newProductName" /> Price:
