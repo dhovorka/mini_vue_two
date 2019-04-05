@@ -4,8 +4,9 @@
     <div>
       Name: <input type="text" v-model="newProductName" /> Price:
       <input type="text" v-model="newProductPrice" /> Description: <input type="text" v-model="newProductDescription" />
-      <button v-on:click="createProduct()">Create Product</button>
     </div>
+    <button v-on:click="createProduct()">Create Product</button>
+
     <h1>All Products</h1>
     <div v-for="product in products">
       <h2>{{ product.name }}</h2>
