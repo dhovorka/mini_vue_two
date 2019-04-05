@@ -11,6 +11,7 @@
     <div v-for="product in products">
       <h2>{{ product.name }}</h2>
       <img v-bind:src="product.url" />
+      <router-link v-bind:to="`/products/${product.id}`">more info</router-link>
       <button v-on:click="showProduct(product)">Show More Info</button>
       <div v-if="currentProduct === product">
         <p>Name: {{ product.name }}</p>
