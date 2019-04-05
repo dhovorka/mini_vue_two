@@ -11,6 +11,7 @@
       Price:
       <input type="text" v-model="product.price" />
       <input type="text" v-model="product.description" />
+      <button v-on:click="destroyProduct(product)">delete for good</button>
       <button v-on:click="updateProduct(product)">Update product</button>
     </div>
     <router-link to="/">Back to all products</router-link>
